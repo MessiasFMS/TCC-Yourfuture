@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --blue-primary: #4B87FF;
+    --red-secondary: #F55858;
+    --dark: #313131;
+    --white: #F5F5F5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+img {
+  display: block; 
+  max-width: 100%;
+}
+
+h1 {
+  color: var(--dark);
+  font-size: 3.75rem;
+  font-weight: 900;
+
+}
+
+h3 {
+  font-size: 2.188rem;
+  font-weight: 900;
+  color: var(--blue-primary);
+}
+
+h4 {
+  font-size: 1.875rem;
+  font-weight: normal;
+}
+
+p {
+  font-size: 1.5rem;
+  color: var(--dark);
+}
+
+li {
+  font-size: 1.5rem;
+  color: var(--dark);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+ul #active {
+  color: var(--blue-primary);
+}
+
+button {
+  background-color: var(--blue-primary);
+  color: var(--white);
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.logo {cursor: pointer;}
+
+@media screen and (max-width: 1420px) {
+    h1 {
+      font-size: 2.813rem;
+    }
+
+    h3 {
+      font-size: 1.875rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+    }
+
+    li {
+      font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 580px){
+  h1 {
+    font-size: 2.188rem;
+  }
+
+  h3 {
+    font-size: 1.563rem;
+  }
+
+}

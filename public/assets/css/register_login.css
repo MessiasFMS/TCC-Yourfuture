@@ -1,0 +1,125 @@
+body {
+  background-image: url('../img/Mountains.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.left {
+  flex: 3;
+}
+
+.right {
+  flex: 1.5;
+  background-color: white;
+  flex-direction: column;
+
+}
+
+.container-forms {
+  flex-direction: column;
+  max-width: 80%;
+  margin: 0 auto;
+  justify-content: space-around;
+  
+}
+
+.header {
+ margin-top: 5vh;
+ margin-bottom: 3vh;
+}
+
+
+.field-error {
+  font-size: 1.125rem;
+  color: var(--red-secondary);
+  float: right;
+  transform: translateY(-4vh);
+}
+
+#logo {
+  max-width: 100%;
+  margin: auto;
+}
+
+.forms {
+  margin-bottom: 10vh;
+  font-size: 1.375rem;
+}
+
+.forms > h4 {
+  margin-bottom: 30px;
+}
+
+.field-name {
+  margin-top: 3vh;
+}
+
+.field[type=text], .field[type=email], .field[type=password] {
+  border: none;
+  width: 100%;
+  border-bottom: 3px solid var(--blue-primary);
+  padding: 0.625rem 0 0.625rem 0;
+  margin-bottom: 5vh;
+}
+
+
+.field[type=text]:focus, .field[type=email]:focus, .field[type=password]:focus  {
+  outline: none;
+  transition: 0.3s;
+  border-bottom: 5px solid var(--blue-primary);
+}
+
+.button-submit {
+  margin-top: 5vh;
+  font-size: 1.875rem;
+  padding: 15px 0;
+  width: 100%;
+}
+
+.button-create-account {
+  margin-top: 3vh;
+  font-size: 1.875rem;
+  padding: 15px 0;
+  width: 100%;
+  color: var(--blue-primary);
+  background-color: white;
+}
+
+.forms a {
+  color: var(--red-secondary);
+}
+
+#no-account {
+  margin-top: 6vh;
+}
+
+@media screen and (max-width: 1024px) { 
+  body {
+  background-image:none;
+  }
+
+  .container{
+    justify-content: center;        
+  }
+  .container-forms {
+   height: auto;
+   width: 65vw;
+  }
+  .field{
+      width: 100vh;
+  }
+  .left{
+      display: none;
+  }
+
+  #logo {
+      margin-top: 5vh;
+  }
+  
+}

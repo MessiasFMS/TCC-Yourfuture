@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/register_login.css" />
+</head>
+
+<body>
+  <main>
+    <div class="container">
+
+      <div class="container left">
+
+      </div>
+
+      <div class="container right">
+        
+        <div class="container container-forms">
+          <section class="header">
+            <img class="logo" id="logo" src="assets/img/Logo.png" alt="" onclick="location.href = '/';" />
+          </section>
+          <section class="forms">
+            <h4>Crie sua conta</h4>
+            <form method="POST" action="/register">
+              <label class="field-name" for="teste">Digite seu e-mail</label>
+              <input id="teste" class="field" type="email" name="email"  required />
+
+              <label class="field-name">Digite sua senha</label>
+              <input class="field" type="password" name="password" required />
+
+              <label class="field-name">Digite sua senha novamente</label>
+              <input class="field" type="password" required />
+
+              <button class="button-submit" type="submit">Criar Conta</button>
+            </form>
+            <p id="no-account">Ja possui uma conta? <a class="access" href="/login">Acessar sua conta</a></p>
+          </section>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+</body>
+
+</html>

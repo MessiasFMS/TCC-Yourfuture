@@ -1,0 +1,33 @@
+.container-acad {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 70px;
+  row-gap: 50px;
+}
+
+.box {
+  width: 75%;
+  height: 200px;
+}
+
+.box-items {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+}
+
+.sla-1 {
+  flex: 1;
+  width: 100%;
+  min-height: 200px;
+  background-color: var(--blue-primary);
+}
+
+.sla-2 {
+  flex: 4;
+  width: 100%;
+  height: 200px;
+  background-color: #8f8f8f;
+}

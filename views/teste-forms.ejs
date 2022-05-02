@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/teste.css" />
+</head>
+
+<body>
+    <main class="container">
+        <div class="header">
+            <h1 id="question"></h1>
+            <h4>
+                <%= questions[pergunta].question %>
+            </h4>
+        </div>
+
+        <div class="questions">
+            <form action="/form" method="POST" >
+                <label class="test-answer">
+                    <input type="radio" name="resposta" value="A" id="A"/>
+                    <%= questions[pergunta].A %>
+                </label>
+
+                <label class="test-answer">
+                    <input type="radio" name="resposta" value="B" />
+                    <%= questions[pergunta].B %>
+                </label class="test-answer">
+
+                <label class="test-answer">
+                    <input type="radio" name="resposta" value="C" />
+                    <%= questions[pergunta].C %>
+                </label>
+
+                <label class="test-answer">
+                    <input type="radio" name="resposta" value="D" />
+                    <%= questions[pergunta].D %>
+                </label>
+
+                <label class="test-answer">
+                    <input type="radio" name="resposta" value="E" />
+                    <%= questions[pergunta].E %>
+                </label>
+
+                <div class="footer">
+                    <div class="progress">
+                        <div class="progress-value" id="progress-bar"></div>
+                    </div>
+                    <button class="test-button" type="submit" name="pergunta"
+                        value="<%= pergunta %>">Próxima</button>
+                </div>
+            </form>
+        </div>
+
+    </main>
+    <script>
+        var progressbar = document.getElementById('progress-bar')
+        var question = document.getElementById('question')
+        var pergunta = "<%= pergunta %>";
+
+        window.addEventListener('load', (event) => {
+        
+            if (pergunta == 0) {
+                progressbar.style.width = "20%"
+                progressbar.style.backgroundColor = "#FFF281"
+                question.innerHTML = "Questão 1"
+            }
+            if (pergunta == 1) {
+                progressbar.style.width = "40%"
+                progressbar.style.backgroundColor = "#A7FF71"
+                question.innerHTML = "Questão 2"
+            }
+            if (pergunta == 2) {
+                progressbar.style.width = "60%"
+                progressbar.style.backgroundColor = "#A4C3FF"
+                question.innerHTML = "Questão 3"
+            }
+            if (pergunta == 3) {
+                progressbar.style.width = "80%"
+                progressbar.style.backgroundColor = "#C1A4FF"
+                question.innerHTML = "Questão 4"
+            }
+            if (pergunta == 4) {
+                progressbar.style.width = "100%"
+                progressbar.style.backgroundColor = "#FF9393"
+                question.innerHTML = "Questão 5"
+            }
+        });
+    </script>
+</body>
+
+</html>
